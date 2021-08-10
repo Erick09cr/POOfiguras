@@ -13,23 +13,20 @@ public class figuras {
 
     }
     public void triangulo() {
-        int base,altura,area;
-        base = Integer.parseInt(JOptionPane.showInputDialog("Digite la base del triangulo"));
-        altura = Integer.parseInt(JOptionPane.showInputDialog("Digite la altura del triangulo"));
+        double base,altura,area;
+        base = Double.parseDouble(JOptionPane.showInputDialog("Digite la base del triangulo"));
+        altura = Double.parseDouble(JOptionPane.showInputDialog("Digite la altura del triangulo"));
         area = (base * altura) /2;
 
         JOptionPane.showMessageDialog(null, "El area del triangulo es :" + area);
 
     }
-    
-      /* public void triangulo() {
-        int base,altura,area;
-        base = Integer.parseInt(JOptionPane.showInputDialog("Digite la base del triangulo"));
-        altura = Integer.parseInt(JOptionPane.showInputDialog("Digite la altura del triangulo"));
-        area = (base * altura) /2;
+       public void circulo() {
+        double radio,area;
+        radio = Double.parseDouble(JOptionPane.showInputDialog("Digite el radio del circulo"));
+        area = Math.PI * Math.pow(radio,2);
 
-        JOptionPane.showMessageDialog(null, "El area del triangulo es :" + area); 
-
-    } */
+        JOptionPane.showMessageDialog(null, "El area del triangulo es :" + area);
+    }
 
 }
